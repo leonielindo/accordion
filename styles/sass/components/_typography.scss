@@ -1,0 +1,36 @@
+body {
+  font-family: $base-font-family;
+  font-size: $font-size-base;
+  color: $body-color;
+}
+
+h1 {
+  font-size: $font-size-larger;
+  color: $dark-grey;
+  margin-bottom: 18px;
+  font-weight: bold;
+  span {
+    color: $light-grey;
+    font-size: $font-size-large;
+    font-weight: normal;
+  }
+}
+
+h2 {
+  font-size: $font-size-large;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: $font-size-medium;
+}
+
+p {
+  font-size: $font-size-medium;
+}
+a {
+  color: $brand-blue;
+}
+strong {
+  font-weight: bold;
+}

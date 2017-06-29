@@ -1,0 +1,76 @@
+header {
+  margin-bottom: 25px;
+}
+.heading-borderline {
+  width: 100%;
+  font-size: $font-size-large;
+  color: $dark-grey;
+  position: relative;
+  &:after {
+    content: "";
+    display: inline-block;
+    border-bottom: 3px solid $accent-color1;
+    width:100%;
+    bottom: 4px;
+    position: absolute
+  }
+  span {
+    background: $white;
+    padding-right:5px;
+
+  }
+}
+.rating {
+  &:after{
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: url('../../images/star.png');
+  }
+}
+.view-all {
+  font-weight: bold;
+  display: block;
+  &:after{
+    display: inline-block;
+    content: "";
+    width: 15px;
+    height: 10px;
+    background-image: $icon-arrow-right;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.paris, .london, .new-york {
+  &:after{
+    content:"";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 175px;
+    height:49px;
+  }
+}
+.paris {
+  &:after{
+    background-image: url('../../images/paris.jpg');
+  }
+}
+
+.london {
+  &:after{
+    background-image: url('../../images/london.jpg');
+  }
+}
+
+.new-york {
+  &:after{
+    background-image: url('../../images/new_york.jpg');
+  }
+}
